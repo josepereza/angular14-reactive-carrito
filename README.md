@@ -1,5 +1,7 @@
 # AngularCarrito
-
+## Tutorial 
+* https://www.youtube.com/watch?v=MyKXrbxJtAI&t=1173s
+* https://github.com/nicobytes/angular-reactive
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 
 ## Development server
