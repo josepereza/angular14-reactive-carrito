@@ -1,0 +1,40 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.example-spacer{
+  margin-left: auto;
+  
+}
+button{
+  margin-right: 10px;
+}
+
+.content-cart {
+  width: 250px;
+}
+.item-product {
+  display: flex;
+}
+.list {
+  padding: 1rem;
+}
+
+.item-product img {
+  margin-right: .5rem;
+  width: 20%;
+  margin-bottom: 1rem;
+}

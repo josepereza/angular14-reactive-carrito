@@ -1,0 +1,35 @@
+<mat-drawer-container autosize>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      position="end" [mode]="(isHandset$ | async) ? 'over' : 'side'" opened="false">
+      <mat-toolbar><span>Carrito</span>
+        <span class="example-spacer"></span>
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-toolbar>
+      <mat-nav-list>
+        <div class="list">
+          <div class="item-product" *ngFor="let product of (myCart$  | async)">
+            <img [src]="product.images[0]" alt="">
+            <p>{{ product.title }}</p>
+          </div>
+        </div>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <span>angular-carrito</span>
+        <span class="example-spacer"></span>
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+
+          <mat-icon [matBadge]="(myCart$ | async)?.length" matBadgeOverlap="false" matBadgeColor="accent">shopping_cart
+          </mat-icon>
+        </button>
+
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <app-products></app-products>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</mat-drawer-container>

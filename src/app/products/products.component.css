@@ -1,0 +1,15 @@
+mat-card{
+    width: 25%;
+    margin-left: 10px;
+    min-width: 300px;
+}
+.container {
+    margin: auto;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
